@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NewsCell.h
 //  News
 //
 //  Created by Игорь Талов on 29.06.16.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface NewsCell : UITableViewCell
+@property(weak, nonatomic) IBOutlet UILabel* label;
 
-@property (strong, nonatomic) UIWindow *window;
-
-
++(CGFloat) heightForText:(NSString* )text;
 @end
-
