@@ -11,5 +11,4 @@
 @interface NewsCell : UITableViewCell
 @property(weak, nonatomic) IBOutlet UILabel* label;
 
-+(CGFloat) heightForText:(NSString* )text;
 @end

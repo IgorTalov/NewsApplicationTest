@@ -127,21 +127,17 @@
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(NewsCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     News* news = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
-    cell.textLabel.text = news.newstitle;
+    cell.label.text = news.newstitle;
 }
 
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    News* news = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    
-    return [NewsCell heightForText:news.newstitle];
-    //return 60.f;
+    return 60.f;
 }
 
 #pragma mark - Segue
