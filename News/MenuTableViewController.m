@@ -4,7 +4,7 @@
 //
 //  Created by Игорь Талов on 29.06.16.
 //  Copyright © 2016 Игорь Талов. All rights reserved.
-//
+
 
 #import "MenuTableViewController.h"
 #import "NewsCell.h"
@@ -106,7 +106,7 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    //return [self.array count];
+
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
     
     NSLog(@"%d", [sectionInfo numberOfObjects]);

@@ -4,7 +4,7 @@
 //
 //  Created by Игорь Талов on 01.07.16.
 //  Copyright © 2016 Игорь Талов. All rights reserved.
-//
+
 
 #import "DataManager.h"
 #import "News.h"
