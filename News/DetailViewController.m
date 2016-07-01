@@ -25,7 +25,6 @@
 
 }
 
-
 -(void)dealloc{
     self.webView.delegate = nil;
 }
